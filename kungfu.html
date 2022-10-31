@@ -24,7 +24,14 @@
     	<div class="name">YUQI LI (Yuki)</div>
     	
     	
-    	<a href="kungfu.html">
+    	<a href="about.html">
+    		<div class="flex-row justify-between">
+    			<div class="">About Me</div>
+    			<div class="">></div>
+    		</div>
+    	</a>
+        
+        <a href="kungfu.html">
     		<div class="flex-row justify-between">
     			<div class="">Chinese Martial Arts (Kungfu)</div>
     			<div class="">></div>
@@ -58,14 +65,23 @@
     			<div class="">></div>
     		</div>
     	</a>
-    	
-    	<a href="igem.html">
-    		<div class="flex-row justify-between">
-    			<div class="">ICEM STS Development</div>
-    			<div class="">></div>
-    		</div>
-    	</a>
     </div>
+    
+    <div class="scroll-pendant-box">
+        <div class="pendant-line"></div>
+        <div>
+            <img class="pendant-scroll" src="../../static/img/bird-scroll.svg">
+        </div>
+    </div>
+    
+    <script>
+    	$(window).scroll(() => {
+    		let scrollTopPerc = $(document).scrollTop()/$(document).height()
+    		$(".pendant-line").css("height", $(window).height() * scrollTopPerc + 20)
+    		$(".pendant-scroll").css("top", $(window).height() * scrollTopPerc)
+    
+    	})
+    </script>
 
     <div>
 
