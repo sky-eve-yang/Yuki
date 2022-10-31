@@ -25,6 +25,11 @@
     justify-content: space-around;
 }
 
+@font-face {
+    font-family: 'cmunrm';
+    src: url('/static/cmunrm.ttf');
+}
+
 
 * {
     margin: 0;
@@ -62,10 +67,25 @@ main {
 .desc-title {
     font-size: 2.2rem;
     font-weight: bold;
+    font-family: 'cmunrm';
 }
 
 
 /* design */
+
+.desi-intro {
+    height: 300px;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.8;
+    font-weight: bold;
+}
+
 .design-total-img {
     margin-top: 50px;
     width: 100%;

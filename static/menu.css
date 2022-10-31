@@ -33,16 +33,18 @@
 /* 链接 */
 .menu-alide a {
     text-decoration: none;
-    width: 80%;
-    height: 1rem;
-    padding: 30px 0 0 0;
-    color: rgb(53, 52, 52);
-    font-size: 0.9rem;
+    width: 85%;
+    /* height: 2rem; */
+    padding: 20px 0 10px 0;
+    color: rgb(123 122 122);
+    font-size: 0.95rem;
+    font-weight: 600;
     border-bottom: 1px solid transparent;
 }
 
 .menu-alide a:hover {
     border-bottom: 1px solid #000;
+    color: rgb(53, 52, 52);
 }
 
 .menu-alide a > div {

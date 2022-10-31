@@ -18,9 +18,9 @@
 
 <body>
     <!-- 侧边导航栏 -->
-    
     <div class="menu-alide flex-column align-center">
-    	<div class="avatar-box">
+    	
+        <div class="avatar-box">
     		<img src="" />
     	</div>
     	<div class="name">YUQI LI (Yuki)</div>
@@ -92,8 +92,13 @@
     <div>
 
         <main class="flex-column align-center">
+            <div class="desi-intro">
+                The first science picture book photographed, designed, produced, published by YUQI and donated to children in mountainous areas：
+            </div>
+
             <div class="cover-box flex-column align-center justify-center">
-                <span id="typed" style="white-space: pre-wrap;line-height: 30px;" class="desc-title"></span>
+                <div id="typed1" style="white-space: pre-wrap;margin-bottom: 4rem;height: 6rem;" class="desc-title">Voice for Birds</div>
+                <div id="typed2" style="white-space: pre-wrap;font-size: 4rem;height: 4rem;margin-bottom: 19rem;" class="desc-title"></div>
             </div>
             
             <div style="width:79vw;height:659vw;background-image: url('https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/b1312025-915c-44e3-ab07-a36d495c0a30.jpg'); background-repeat: no-repeat;background-size: contain;margin-top: 50px;"></div>
@@ -261,13 +266,13 @@
  var options = {
     strings: [
         'YUQI LI',
-        'Yuki'
+        '(Yuki)'
     ],
     typeSpeed: 80,   //打印速度
     startDelay: 1000, //开始之前的延迟300毫秒
     loop: true,      //是否循环
 };
-var typed = new Typed('#typed', options);
+var typed = new Typed('#typed2', options);
 </script>
 
 </html>
