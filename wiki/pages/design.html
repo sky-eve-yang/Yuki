@@ -6,14 +6,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Photography Portfolio & Design</title>
-    {% include 'link.html' %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../static/aos-master/dist/aos.css'" media="all" />
+    <script src="../../static/jquery.js"></script>
+    <link rel="stylesheet" href="../../static/index.css" media="all" />
+    <link rel="stylesheet" href="../../static/menu.css" media="all" />
+    <script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
 </head>
 
 
 
 <body>
     <!-- 侧边导航栏 -->
-    {% include 'menu.html' %}
+    
+    <div class="menu-alide flex-column align-center">
+    	<div class="avatar-box">
+    		<img src="" />
+    	</div>
+    	<div class="name">YUQI LI (Yuki)</div>
+    	
+    	
+    	<a href="kungfu.html">
+    		<div class="flex-row justify-between">
+    			<div class="">Chinese Martial Arts (Kungfu)</div>
+    			<div class="">></div>
+    		</div>
+    	</a>
+    	
+    	<a href="chorus.html">
+    		<div class="flex-row justify-between">
+    			<div class="">Chorus & Bel Canto Solo</div>
+    			<div class="">></div>
+    		</div>
+    	</a>
+    	
+    	<a href="design.html">
+    		<div class="flex-row justify-between">
+    			<div class="">Photography Portfolio & Design</div>
+    			<div class="">></div>
+    		</div>
+    	</a>
+    	
+    	<a href="calligraphy.html">
+    		<div class="flex-row justify-between">
+    			<div class="">Chinese Calligraphy & Arts</div>
+    			<div class="">></div>
+    		</div>
+    	</a>
+    	
+    	<a href="dream.html">
+    		<div class="flex-row justify-between">
+    			<div class="">Swordsman Dream & Cultivation</div>
+    			<div class="">></div>
+    		</div>
+    	</a>
+    	
+    	<a href="igem.html">
+    		<div class="flex-row justify-between">
+    			<div class="">ICEM STS Development</div>
+    			<div class="">></div>
+    		</div>
+    	</a>
+    </div>
+    
+    <div class="scroll-pendant-box">
+        <div class="pendant-line"></div>
+        <div>
+            <img class="pendant-scroll" src="../../static/img/bird-scroll.svg">
+        </div>
+    </div>
+    
+    <script>
+    	$(window).scroll(() => {
+    		let scrollTopPerc = $(document).scrollTop()/$(document).height()
+    		$(".pendant-line").css("height", $(window).height() * scrollTopPerc + 20)
+    		$(".pendant-scroll").css("top", $(window).height() * scrollTopPerc)
+    
+    	})
+    	
+    	
+    </script>
+
+
 
     <div>
 
@@ -22,7 +96,9 @@
                 <span id="typed" style="white-space: pre-wrap;line-height: 30px;" class="desc-title"></span>
             </div>
             
-            <img class="design-total-img" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/b1312025-915c-44e3-ab07-a36d495c0a30.jpg" />
+            <div style="width:79vw;height:659vw;background-image: url('https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/b1312025-915c-44e3-ab07-a36d495c0a30.jpg'); background-repeat: no-repeat;background-size: contain;margin-top: 50px;"></div>
+            
+            <!--<img class="design-total-img" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/b1312025-915c-44e3-ab07-a36d495c0a30.jpg" />-->
             
             <!-- <div class="design-zone1 flex-row align-center">
                 <div class="flex-column">
@@ -171,7 +247,7 @@
         </main>
         
         <!-- 底部 -->
-        {% include 'footer.html' %}
+        <!--{% include 'footer.html' %}-->
     </div>
     
 
@@ -180,6 +256,19 @@
     
 
 </body>
+
+<script type="text/javascript">
+ var options = {
+    strings: [
+        'YUQI LI',
+        'Yuki'
+    ],
+    typeSpeed: 80,   //打印速度
+    startDelay: 1000, //开始之前的延迟300毫秒
+    loop: true,      //是否循环
+};
+var typed = new Typed('#typed', options);
+</script>
 
 </html>
 
