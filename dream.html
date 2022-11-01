@@ -8,6 +8,8 @@
     <title>Swordsman Dream & Cultivation</title>
     <link rel="stylesheet" href="static/aos-master/dist/aos.css'" media="all" />
     <script src="static/jquery.js"></script>
+	<script src="static/layui/layui.js"></script>
+	<link rel="stylesheet" href="static/layui/css/layui.css" media="all" />
     <link rel="stylesheet" href="static/index.css" media="all" />
     <link rel="stylesheet" href="static/menu.css" media="all" />
     <script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
@@ -19,7 +21,7 @@
     <!-- 侧边导航栏 -->
     <div class="menu-alide flex-column align-center">
     	<div class="avatar-box">
-    		<img src="" />
+    		<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/cd0522b1-ba5f-4816-97d5-5d416ff96e63.jpeg" />
     	</div>
     	<div class="name">YUQI LI (Yuki)</div>
     	
@@ -70,7 +72,7 @@
     <div class="scroll-pendant-box">
         <div class="pendant-line"></div>
         <div>
-            <img class="pendant-scroll" src="../../static/img/bird-scroll.svg">
+            <img class="pendant-scroll" src="../../static/img/cat-scroll.svg">
         </div>
     </div>
     
@@ -81,10 +83,172 @@
     		$(".pendant-scroll").css("top", $(window).height() * scrollTopPerc)
     
     	})
+
+		$(".scroll-pendant-box").click(function() {
+            $("html,body").animate({scrollTop: 0},800)
+            $(".pendant-line").animate({height:"-80px"},800)
+            $(".pendant-scroll").animate({top:"-100px"},800)
+        })
     </script>
 
-    <div>
+    <div class="kungfu-box">
+		<fieldset class="layui-elem-field layui-field-title kungfu-title">
+			<legend style="font-size: 2rem;font-weight: 700;">Swordsman Dream & Cultivation</legend>
+		</fieldset>
 
+		<fieldset class="layui-elem-field layui-field-title kungfu-subtitle">
+			<legend style="font-size: 1.5rem;font-weight: 600">Leaping and Freedom</legend>
+		</fieldset>
+
+		<div class="layui-carousel" id="dream-test12">
+			<div carousel-item="" class="carousl-item">
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/1f5bf019-bd47-4e07-9d43-73750709908b.jpg" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/1f5bf019-bd47-4e07-9d43-73750709908b.jpg">
+					<div class="peach-desc"></div>
+				</div>
+
+				<div>
+					<img style="height: 100%;" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/9d04d52b-00de-41a3-a0e1-837fe635b88c.jpg" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/9d04d52b-00de-41a3-a0e1-837fe635b88c.jpg">
+					<div class="peach-desc">Desert</div>
+				</div>
+
+				<div>
+					<img style="width: 33vw;margin-left: 13vw;" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/2aef0e88-c3ab-4366-b30e-e2e7228f838b.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/2aef0e88-c3ab-4366-b30e-e2e7228f838b.JPG">
+					<div class="peach-desc" style="color: #000;">Beach and Ocean</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/7098dc0e-539d-4042-b715-5872edbfe18a.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/7098dc0e-539d-4042-b715-5872edbfe18a.JPG">
+					<div class="peach-desc">Mountain</div>
+				</div>
+
+				<div>
+					<img style="width: 33vw;margin-left: 13vw;" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/aeef404e-621d-487d-9ce0-33ea4c5ec97d.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/aeef404e-621d-487d-9ce0-33ea4c5ec97d.JPG">
+					<div class="peach-desc"  style="color: #000;">Sea of Flowers</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/b488c192-3027-472b-91eb-0ad03a48ae14.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/b488c192-3027-472b-91eb-0ad03a48ae14.JPG">
+					<div class="peach-desc" style="color: #000;">Prairie</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/2e767e0e-10db-4e82-9486-3294b52c582f.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/2e767e0e-10db-4e82-9486-3294b52c582f.JPG">
+					<div class="peach-desc">River</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<fieldset class="layui-elem-field layui-field-title kungfu-subtitle">
+			<legend style="font-size: 1.5rem;font-weight: 600">Peach Cultivation</legend>
+		</fieldset>
+
+		<div class="layui-carousel" id="dream-test13">
+			<div carousel-item="" class="carousl-item">
+				<div style="position: relative">
+					<img  src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/82e4d115-4ddb-485b-978e-0ba2abed94a4.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/82e4d115-4ddb-485b-978e-0ba2abed94a4.JPG">
+					<div class="peach-desc">Peach Loosening</div>
+					<div class="peach-cover-box">
+						<div class="peach-cover-icon flex-row align-center justify-center">
+							<i class="layui-icon layui-icon-return" style="font-size: 3rem; color: #ffffff;"></i>
+						</div>
+						<div class="peach-cover-text flex-row align-center">YUQI</div>
+					</div>
+					
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/60f596d4-740d-470a-847c-810316db678d.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/60f596d4-740d-470a-847c-810316db678d.JPG">
+					<div class="peach-desc">Peach Picking</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/192a4258-1177-43e2-beb6-8e84abe2b20f.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/192a4258-1177-43e2-beb6-8e84abe2b20f.JPG">
+					<div class="peach-desc">Soil Loosening</div>
+				</div>
+			</div>
+		</div>
+
+		<fieldset class="layui-elem-field layui-field-title kungfu-subtitle">
+			<legend style="font-size: 1.5rem;font-weight: 600">Swordsman Dream</legend>
+		</fieldset>
+
+		<div class="layui-carousel" id="dream-test14">
+			<div carousel-item="" class="carousl-item">
+				<div style="position: relative">
+					<img  src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/866a6384-3a64-4370-af40-56aabc6482cb.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/866a6384-3a64-4370-af40-56aabc6482cb.JPG">
+					<div class="peach-desc"></div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/add24e7d-4620-4152-bf63-dacb4f335a15.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/add24e7d-4620-4152-bf63-dacb4f335a15.JPG">
+					<div class="peach-desc">Foot Stand</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/573ba920-f679-43dc-b51c-1ed51bd0b3b6.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/573ba920-f679-43dc-b51c-1ed51bd0b3b6.JPG">
+					<div class="peach-desc">Cartwheel with One Hand</div>
+				</div>
+				
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/1c1eee47-24e5-4f45-9458-599725cd0724.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/1c1eee47-24e5-4f45-9458-599725cd0724.JPG">
+					<div class="peach-desc">Rest-stand Step</div>
+				</div>
+
+				<div>
+					<img style="height: 100%;width: 31vw;margin-left: 14vw;" src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/6c9723d0-9962-405d-8366-59ef0ca6c814.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/6c9723d0-9962-405d-8366-59ef0ca6c814.JPG">
+					<div class="peach-desc" style="color: #000;">Mantis Boxing</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/df02085b-8889-4ed6-8edc-fe86a439d1bd.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/df02085b-8889-4ed6-8edc-fe86a439d1bd.JPG">
+					<div class="peach-desc">Kneeling Step</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/655441ed-23b9-40cb-b887-09d843caa791.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/655441ed-23b9-40cb-b887-09d843caa791.JPG">
+					<div class="peach-desc">Kick Upward with Sole</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/e29f1aea-ceca-4a22-b50c-8fa0c3b36004.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/e29f1aea-ceca-4a22-b50c-8fa0c3b36004.JPG">
+					<div class="peach-desc"></div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/9fdd9a0f-d752-43d2-a42f-bfcb52ba7965.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/9fdd9a0f-d752-43d2-a42f-bfcb52ba7965.JPG">
+					<div class="peach-desc">Horse Stance</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/e28c9752-6303-432e-b9ba-ba8448e59f92.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/e28c9752-6303-432e-b9ba-ba8448e59f92.JPG">
+					<div class="peach-desc">Handspring</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/645770a7-621e-419e-9aed-0b6b20650b3c.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/645770a7-621e-419e-9aed-0b6b20650b3c.JPG">
+					<div class="peach-desc">Forward Lunge</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/cd485cdf-2120-41c9-97d6-f2b7363d196d.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/cd485cdf-2120-41c9-97d6-f2b7363d196d.JPG">
+					<div class="peach-desc">Eagle Fist</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/4dad964c-8541-48f8-a42d-8ed3a2fa5a99.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/4dad964c-8541-48f8-a42d-8ed3a2fa5a99.JPG">
+					<div class="peach-desc">Do the Splits</div>
+				</div>
+
+				<div>
+					<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/a49d2155-64ad-4073-a1f2-e8c9fae327f3.JPG" tppabs="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/a49d2155-64ad-4073-a1f2-e8c9fae327f3.JPG">
+					<div class="peach-desc">Bruce Lee's First Move</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="height: 150px;width: 100%;"></div>
 
         
         
@@ -97,17 +261,47 @@
 
 </body>
 <script type="text/javascript">
-    var options = {
-       strings: [
-           'YUQI LI',
-           'Yuki'
-       ],
-       typeSpeed: 80,   //打印速度
-       startDelay: 1000, //开始之前的延迟300毫秒
-       loop: true,      //是否循环
-   };
-   var typed = new Typed('#typed', options);
-   </script>
+    layui.use(['carousel', 'form'], function(){
+		var carousel = layui.carousel
+		,form = layui.form;
+		
+		//图片轮播
+
+		carousel.render({
+			elem: '#dream-test12'
+			,width: '60vw'
+			,height: '44vw'
+			,interval: 4000
+		});
+
+		carousel.render({
+			elem: '#dream-test13'
+			,width: '60vw'
+			,height: '41vw'
+			,interval: 4000
+		});
+
+		carousel.render({
+			elem: '#dream-test14'
+			,width: '60vw'
+			,height: '41vw'
+			,interval: 4000
+		});
+		
+	
+	});
+
+	layui.use('flow', function(){
+		var flow = layui.flow;
+		
+		
+		//按屏加载图片
+		flow.lazyimg({
+			elem: '.kungfu-box img'
+		});
+		
+	});
+</script>
    
 </html>
 

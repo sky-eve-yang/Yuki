@@ -8,9 +8,17 @@
     <title>About me</title>
     <link rel="stylesheet" href="static/aos-master/dist/aos.css'" media="all" />
     <script src="static/jquery.js"></script>
+    <script src="static/mySlider.js"></script>
     <link rel="stylesheet" href="static/index.css" media="all" />
     <link rel="stylesheet" href="static/menu.css" media="all" />
     <script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
+
+	<style>
+		::-webkit-scrollbar {
+			width: 0;
+		}
+	</style>
+
 </head>
 
 
@@ -19,7 +27,7 @@
     <!-- 侧边导航栏 -->
     <div class="menu-alide flex-column align-center">
     	<div class="avatar-box">
-    		<img src="" />
+    		<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/cd0522b1-ba5f-4816-97d5-5d416ff96e63.jpeg" />
     	</div>
     	<div class="name">YUQI LI (Yuki)</div>
     	
@@ -67,26 +75,18 @@
     	</a>
     </div>
     
-    <div class="scroll-pendant-box">
-        <div class="pendant-line"></div>
-        <div>
-            <img class="pendant-scroll" src="../../static/img/bird-scroll.svg">
-        </div>
-    </div>
-    
-    <script>
-    	$(window).scroll(() => {
-    		let scrollTopPerc = $(document).scrollTop()/$(document).height()
-    		$(".pendant-line").css("height", $(window).height() * scrollTopPerc + 20)
-    		$(".pendant-scroll").css("top", $(window).height() * scrollTopPerc)
-    
-    	})
-    </script>
 
-    <div>
+    <div class="about-content flex-row align-center">
 
-
-        
+		<div class="about-content-text flex-column align-center justify-center">
+			<div class="title">Yuqi Li (Yuki) </div>
+			<div class="intro">The Affiliated High School of Shanxi University & Insight Academy of Canada</div>
+			<div class="intro">There are 3 key words to describe myself: empathic, initiative and self-challenging.</div>
+			<div class="intro-desc">Accustomed to stepping out of my comfort zone and trying new things academically and in life, I'm also a good listener, a "tree hole" for those around me, and a passionate advocate for good causes across the country and the world.</div>
+		</div>
+        <div class="about-content-img flex-column align-center justify-center">
+			<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/8ba19a48-0b17-4b4e-b447-6a8de5805f78.JPG">	
+		</div>
         
     </div>
     
@@ -96,18 +96,7 @@
     
 
 </body>
-<script type="text/javascript">
-    var options = {
-       strings: [
-           'YUQI LI',
-           'Yuki'
-       ],
-       typeSpeed: 80,   //打印速度
-       startDelay: 1000, //开始之前的延迟300毫秒
-       loop: true,      //是否循环
-   };
-   var typed = new Typed('#typed', options);
-   </script>
+
    
 
 </html>

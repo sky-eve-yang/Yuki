@@ -21,7 +21,7 @@
     <div class="menu-alide flex-column align-center">
     	
         <div class="avatar-box">
-    		<img src="" />
+    		<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/cd0522b1-ba5f-4816-97d5-5d416ff96e63.jpeg" />
     	</div>
     	<div class="name">YUQI LI (Yuki)</div>
     	
@@ -72,17 +72,23 @@
     <div class="scroll-pendant-box">
         <div class="pendant-line"></div>
         <div>
-            <img class="pendant-scroll" src="../../static/img/bird-scroll.svg">
+            <img class="pendant-scroll" src="../../static/img/cat-scroll.svg">
         </div>
     </div>
     
     <script>
     	$(window).scroll(() => {
     		let scrollTopPerc = $(document).scrollTop()/$(document).height()
-    		$(".pendant-line").css("height", $(window).height() * scrollTopPerc + 20)
-    		$(".pendant-scroll").css("top", $(window).height() * scrollTopPerc)
+    		$(".pendant-line").css("height", $(window).height() * scrollTopPerc - 80)
+    		$(".pendant-scroll").css("top", $(window).height() * scrollTopPerc-100)
     
     	})
+
+        $(".scroll-pendant-box").click(function() {
+            $("html,body").animate({scrollTop: 0},800)
+            $(".pendant-line").animate({height:"-80px"},800)
+            $(".pendant-scroll").animate({top:"-100px"},800)
+        })
     	
     	
     </script>
