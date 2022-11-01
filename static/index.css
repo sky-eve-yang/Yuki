@@ -417,3 +417,19 @@ p {
 .layui-carousel-ind {
     height: 20px !important;
 }
+
+
+/* 加载动画 */
+#loading {
+    background-image: url('https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/740a55f1-21b4-4621-b41a-117194f22d6f.webp');
+    position: fixed;
+    z-index: 999999;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 50vw;
+    left: 0;
+    top: 0px;
+    background-color: #343434;
+
+}

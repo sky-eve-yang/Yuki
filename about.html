@@ -24,6 +24,7 @@
 
 
 <body>
+	<div id="loading"></div>
     <!-- 侧边导航栏 -->
     <div class="menu-alide flex-column align-center">
     	<div class="avatar-box">
@@ -97,7 +98,13 @@
 
 </body>
 
-   
+<script>
+	$(window).ready(()=> {
+		setTimeout(() => {
+			$("#loading").fadeOut(500)
+		},1500)
+	})
+</script>
 
 </html>
 
