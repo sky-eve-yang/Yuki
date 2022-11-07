@@ -70,6 +70,7 @@ main {
     font-size: 2.2rem;
     font-weight: bold;
     font-family: 'cmunrm';
+    
 }
 
 
@@ -80,12 +81,14 @@ main {
     font-size: 2rem;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    width: 70%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1.8;
     font-weight: bold;
+    background-color: #000;
+    padding: 0 15%;
 }
 
 .design-total-img {
