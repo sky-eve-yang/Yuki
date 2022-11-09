@@ -352,6 +352,7 @@ p {
     line-height: 1.6 !important;
     font-size: 1.2rem;
     font-family: 'Times New Roman', Times, serif;
+    width: 96%;
 }
 
 #test10, #test11, #test12, #test13, #dream-test12,#dream-test13,#dream-test14{
@@ -399,7 +400,14 @@ p {
 .kungfu-box > img {
     width: 80%;
     margin: 0 0 0 10%;
-    
+}
+
+.link{
+    color: #108b96;
+}
+
+.link :hover {
+    color: #87c0ca;
 }
 
 .kungfu-box > img {
