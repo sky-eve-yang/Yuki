@@ -4,6 +4,7 @@
     background-color: #202428;
     position: fixed;
     z-index: 9999;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -11,8 +12,8 @@
 /* 头像 */
 .avatar-box {
     margin-top: 3rem;
-    width: 12vw;
-    height: 12vw;
+    width: 11vw;
+    height: 11vw;
     border-radius: 50%;
     background-color: #507a93;
     overflow: hidden;
@@ -38,7 +39,7 @@
     /* height: 2rem; */
     padding: 20px 0 10px 0;
     color: rgb(190 190 190);
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 600;
     border-bottom: 1px solid transparent;
 }
