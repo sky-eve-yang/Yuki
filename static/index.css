@@ -57,6 +57,10 @@ main {
     background-color: #000;
 }
 
+.zsiq_theme1.zsiq_floatmain {
+    display: none !important;
+}
+
 .cover-box {
     background-image: url('https://vkceyugu.cdn.bspapp.com/VKCEYUGU-49bdbaed-e3f4-48f9-a64f-e563b0edcd86/d203b0ef-6d75-4ebf-8bcc-faa282119970.jpg');
     background-repeat: no-repeat;
