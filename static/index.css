@@ -54,7 +54,7 @@ main {
     margin-left: 20vw;
     width: 79vw;
     min-height: 100%;
-    background-color: #fff;
+    background-color: #000;
 }
 
 .cover-box {
@@ -367,6 +367,9 @@ p {
 .award-img-box div {
     width: 50%;
 }
+.award-img-box  img {
+    box-shadow: 2px 2px 10px #fff;
+}
 
 /* arts */
 
@@ -415,8 +418,9 @@ p {
 }
 
 .content-img-row-2 {
-    width: 96%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 2rem auto 0 auto;
+
 }
 
 .content-img-row-2 > img {
