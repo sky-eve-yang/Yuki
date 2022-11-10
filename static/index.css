@@ -280,22 +280,28 @@ img {
 }
 
 .title:hover {
-    color: #04c0c0;
+    /* color: #04c0c0; */
+    animation: textColorShow 1s;
     
 }
 
-/* @keyframes textColorShow {
-    from {
-        
+@keyframes textColorShow {
+    0% {
+        color: #fff;
     }
-} */
+    100% {
+        background:-webkit-gradient(linear,30% 20%,80% 80%,from(#20bdff),to(#a5fecb));
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+    }
+}
 
 .about-content-text .title {
     font-weight:1000;
     font-size: 4rem;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 4rem;
-    transition: color 1s;
+    margin-bottom: 3rem;
+    /* transition: color 1s; */
     line-height: 5rem;
 
 }
@@ -319,7 +325,7 @@ img {
 
 
 .about-content-img {
-    width: 35%;
+    width: 30%;
     height: 100vh;
 }
 
