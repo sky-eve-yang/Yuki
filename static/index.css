@@ -281,13 +281,17 @@ img {
 
 .title:hover {
     /* color: #04c0c0; */
-    animation: textColorShow 1s;
+    /* animation: textColorShow 1s; */
+    -webkit-animation: textColorShow 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: textColorShow 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
 }
 
 @keyframes textColorShow {
     0% {
-        color: #fff;
+        background:-webkit-gradient(linear,30% 20%,80% 80%,from(#fff),to(#fff));
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
     }
     100% {
         background:-webkit-gradient(linear,30% 20%,80% 80%,from(#20bdff),to(#a5fecb));
@@ -296,25 +300,20 @@ img {
     }
 }
 
-
-@-webkit-keyframes scale-down-center {
+@keyframes slide-in-elliptic-right-fwd {
     0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
+      -webkit-transform: translateX(800px) rotateY(-30deg) scale(0);
+              transform: translateX(800px) rotateY(-30deg) scale(0);
+      -webkit-transform-origin: -100% 50%;
+              transform-origin: -100% 50%;
+      opacity: 0;
     }
     100% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
-    }
-  }
-  @keyframes scale-down-center {
-    0% {
-      -webkit-transform: scale(1);
-              transform: scale(1);
-    }
-    100% {
-      -webkit-transform: scale(0.5);
-              transform: scale(0.5);
+      -webkit-transform: translateX(0) rotateY(0) scale(1);
+              transform: translateX(0) rotateY(0) scale(1);
+      -webkit-transform-origin: -1800px 50%;
+              transform-origin: -1800px 50%;
+      opacity: 1;
     }
   }
 
@@ -349,6 +348,8 @@ img {
 .about-content-img {
     width: 30%;
     height: 100vh;
+    -webkit-animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 1.6s;
+	        animation: slide-in-elliptic-right-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 1.6s;
 }
 
 .about-content-img >img {
