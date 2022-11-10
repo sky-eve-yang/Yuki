@@ -101,17 +101,21 @@
 
 
 		<fieldset class="layui-elem-field layui-field-title kungfu-title" >
-			<legend style="font-size: 2rem;font-weight: 700;">Supplementary Courses on Coursera: </legend>
+			<legend style="font-size: 2rem;font-weight: 700;">Supplementary Courses and Projects on Coursera: </legend>
 		</fieldset>
 		
 		<a href="https://www.coursera.org/learn/sciwrite" class="link"><p>(1) Writing in the Sciences - Stanford University</p></a>	
 		<a href="https://www.coursera.org/learn/introduction-psychology" class="link"><p>(2) Psychology - Yale University</p></a>	
-		<a href="https://www.coursera.org/learn/womens-health-human-rights" class="link"><p>(3) International Women's Health and Human Rights</p></a>	
-		<a href="https://www.coursera.org/learn/covid-19-contact-tracing" class="link"><p>(4) Covid-19 Contact Tracing</p></a>	
-		<a href="https://www.coursera.org/learn/strategies-assisted-living-covid19" class="link"><p>(5) Strategies for Assisted Living Communities during COVID-19</p></a>	
-		<a href="https://www.coursera.org/learn/strategies-senior-housing-covid19" class="link"><p>(6) Strategies for Senior Housing Communities during COVID-19</p></a>	
-		<a href="https://www.coursera.org/learn/covid19-epidemiology" class="link"><p>(7) Fighting COVID-19 with Epidemiology</p></a>	
+		<a href="https://www.coursera.org/learn/womens-health-human-rights" class="link"><p>(3) International Women's Health and Human Rights - Stanford University</p></a>	
+		<a href="https://www.coursera.org/learn/covid-19-contact-tracing" class="link"><p>(4) Covid-19 Contact Tracing - JHU</p></a>	
+		<a href="https://www.coursera.org/learn/strategies-assisted-living-covid19" class="link"><p>(5) Strategies for Assisted Living Communities during COVID-19 - JHU</p></a>	
+		<a href="https://www.coursera.org/learn/strategies-senior-housing-covid19" class="link"><p>(6) Strategies for Senior Housing Communities during COVID-19 - JHU</p></a>	
+		<a href="https://www.coursera.org/learn/covid19-epidemiology" class="link"><p>(7) Fighting COVID-19 with Epidemiology - JHU</p></a>	
 		
+		<div class="content-img-row-2 flex-row justify-around">
+			<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-8a47b03a-a044-4905-9e94-6831632560b9/3649160e-adec-4931-a279-3c52d52e599e.jpg">
+			<img src="https://vkceyugu.cdn.bspapp.com/VKCEYUGU-8a47b03a-a044-4905-9e94-6831632560b9/59284e54-973e-4380-9559-7788733a4f41.jpg">
+		</div>
 
 
 		<fieldset class="layui-elem-field layui-field-title kungfu-title" >
@@ -144,6 +148,52 @@
 			$("#loading").fadeOut(500)
 		},1500)
 	})
+</script>
+
+<script>
+    // 图片点击预览,ul为父类元素,img为已存在元素或者未来生成元素
+    $("img").on("click", function () {
+        clickPicture(this);
+    });
+
+    // 点击图片放大预览
+    function clickPicture(obj) {
+        var img = new Image();
+        img.src = obj.src;
+        img.onload = function (ev) {
+            // 获取图片高度
+            var height = this.height;
+            // 获取图片宽度
+            var width = this.width;
+            // 图片URL地址
+            var imgHtml = "<img style='height: 100%;width: 100%' src='" + obj.src + "' />";
+            // 图片显示面积,前参数为宽,后参数为高
+            var area = [];
+            if (height <= 747 && width <= 1680) {
+                area = [width + 'px', height + 'px'];
+            } else if (height > 747 && width <= 1680) {
+                area = [width + 'px', 747 + 'px'];
+            } else if (height <= 747 && width > 1680) {
+                area = [1680 +'px', height + 'px'];
+            } else {
+                area = [1680 + 'px', 747 + 'px'];
+            }
+            //弹出层
+            top.layer.open({
+                type: 1,
+                shade: 0.8,
+                offset: 'auto',
+                area: area,
+                shadeClose: true,//点击外围关闭弹窗
+                scrollbar: false,//不显示滚动条
+                title: false, //不显示标题
+                content: imgHtml, //捕获的元素
+                cancel: function () {
+                    //layer.msg('捕获就是从页面已经存在的元素上，包裹layer的结构', { time: 5000, icon: 6 });
+                }
+            });
+        };
+    }
 </script>
 
 </html>
