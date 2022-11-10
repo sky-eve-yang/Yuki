@@ -296,11 +296,33 @@ img {
     }
 }
 
+
+@-webkit-keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+  }
+  @keyframes scale-down-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    100% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+  }
+
 .about-content-text .title {
     font-weight:1000;
     font-size: 4rem;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 3rem;
+    /* margin-bottom: 0rem; */
     /* transition: color 1s; */
     line-height: 5rem;
 
@@ -310,12 +332,12 @@ img {
     font-size: 1.6rem;
     text-align: center;
     width: 90%;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     font-family: 'Times New Roman', Times, serif;
 }
 
 .about-content-text .intro-desc {
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     font-family: 'Times New Roman', Times, serif;
     text-indent: 2em;
 }   
@@ -331,7 +353,7 @@ img {
 
 .about-content-img >img {
     /* height: 60vh; */
-    width: 90%;
+    width: 100%;
 }
 
 
