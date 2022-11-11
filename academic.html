@@ -172,9 +172,9 @@
             if (height <= 747 && width <= 1680) {
                 area = [width + 'px', height + 'px'];
             } else if (height > 747 && width <= 1680) {
-                area = [width + 'px', 747 + 'px'];
+                area = [747/height*width + 'px', 747 + 'px'];
             } else if (height <= 747 && width > 1680) {
-                area = [1680 +'px', height + 'px'];
+                area = [1680 +'px', 1680/width*height + 'px'];
             } else {
                 area = [1680 + 'px', 747 + 'px'];
             }
