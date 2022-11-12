@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="static/index.css" media="all" />
     <link rel="stylesheet" href="static/menu.css" media="all" />
     <script src="https://cdn.bootcss.com/typed.js/2.0.9/typed.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+
 
 	<style>
 		/* ::-webkit-scrollbar {
@@ -86,6 +88,28 @@
     		</div>
     	</a>
     </div>
+
+	<div class="scroll-pendant-box">
+        <div class="pendant-line"></div>
+        <div>
+            <img onmousedown="party.confetti(this)" class="pendant-scroll" src="../../static/img/cookie-scroll.svg">
+        </div>
+    </div>
+    
+    <script>
+    	$(window).scroll(() => {
+    		let scrollTopPerc = $(document).scrollTop()/$(document).height()
+    		$(".pendant-line").css("height", $(window).height() * scrollTopPerc + 20)
+    		$(".pendant-scroll").css("top", $(window).height() * scrollTopPerc)
+    
+    	})
+
+		$(".scroll-pendant-box").click(function() {
+            $("html,body").animate({scrollTop: 0},800)
+            $(".pendant-line").animate({height:"-80px"},800)
+            $(".pendant-scroll").animate({top:"-100px"},800)
+        })
+    </script>
     
 
     <div class="kungfu-box">
@@ -152,7 +176,7 @@
 
 <script>
     // 图片点击预览,ul为父类元素,img为已存在元素或者未来生成元素
-    $("img").on("click", function () {
+    $(".content-img-row-2").on("click","img", function () {
         clickPicture(this);
     });
 
