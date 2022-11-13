@@ -437,7 +437,7 @@ img {
 }
 
 p {
-    text-align: justify !important;
+    text-align: justify;
 }
 
 
@@ -470,8 +470,7 @@ p {
     font-size: 1.3rem !important;
 }
 
-.layui-elem-quote {
-    border-left: 5px solid #5fe8dd;
+.layui-elem-quote-p {
     background-color: #000000;
     color: #c8c8c8;
     font-family: 'cmunrm';
