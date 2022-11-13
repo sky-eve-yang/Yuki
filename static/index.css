@@ -433,7 +433,7 @@ img {
 }
 
 .kungfu-imgs-5 > img {
-    width: 20%;
+    height: 32vw;
 }
 
 
@@ -548,6 +548,9 @@ p {
 
 .kungfu-wall-box-2 {
     padding-bottom: 3vw;
+    background-color: #f5f6f7;
+    box-shadow: none;
+
 }
 
 .kungfu-wall-box :nth-child(1) {
