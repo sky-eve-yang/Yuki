@@ -806,3 +806,24 @@ p {
     }
 }
   
+
+
+.next-page-link {
+    color: rgba(255, 255, 255, 0.723);
+    width: 100%;
+    margin: 0 auto;
+}
+
+.next-page-link p {
+    text-align: right  !important;
+    margin: 0 auto;
+    font-size: 28px;
+}
+
+.next-page-link i {
+    font-size: 22px;
+}
+
+.next-page-link:hover {
+    color: #fff;
+}
